@@ -11,10 +11,17 @@
 - MySql: 8.*
 ```
 
-## Docker Usage
+## Docker When First Run
 
 ```sh
 docker build -t laravel-react .
+docker volume create --name=db
+docker volume create --name=app
+```
+
+## Docker Usage
+
+```sh
 docker-compose up
 ```
 
