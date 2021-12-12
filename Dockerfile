@@ -14,7 +14,9 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN sudo rm /var/www/html/index.html
 RUN curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
 RUN sudo apt -y install nodejs
-RUN npm i -g yarn
+RUN npm i -g yarn 
+RUN sudo apt-get -y install python2
+RUN sudo apt-get -y install build-essential
 COPY ./docker-conf/backend.conf /etc/apache2/sites-available/backend.conf
 COPY ./docker-conf/backend.conf /etc/apache2/sites-available/fontend.conf
 
@@ -30,7 +32,7 @@ RUN sudo chown -R $USER:$USER /var/www/fontend
 RUN sudo chmod -R 755 /var/www
 
 COPY ./backend /var/www/backend
-COPY ./fontend /var/www/fontend
+COPY ./fontend /var/www/fontend`
 # COPY docker-conf/server.pem /etc/apache2/server.pem
 # COPY docker-conf/server-key.pem /etc/apache2/server-key.pem
 RUN cd /etc/apache2/mods-enabled/ && sudo a2enmod rewrite && sudo a2enmod ssl
