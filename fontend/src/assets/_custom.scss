@@ -1,0 +1,394 @@
+// Here you can add other styles
+* {
+    padding: 0;
+    margin: 0;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+.mgr-10{
+    margin-right: 10px;
+}
+.mgr-20{
+    margin-right: 20px;
+}
+.loading{
+    text-align: center;
+}
+.require-field{
+    color: red;
+}
+.none{
+    display: none;
+}
+  .card-body header {
+    // css của table list
+    min-height: 0 !important;
+  }
+  .delay-input {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: unset !important;
+    &:focus {
+      border: 1px solid #ccc !important;
+      outline: unset !important;
+    }
+  }
+  .row {
+    margin: 0;
+    padding: 0;
+  }
+  .w100 {
+    width: 100%;
+  }
+  .btn {
+    font-size: 12px;
+  }
+  .c-sidebar-nav-item,
+  .c-sidebar-nav-dropdown {
+    svg {
+      margin-right: 20px;
+      width: 15px !important;
+    }
+  }
+  .span-action {
+    background-color: #303c54;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 5px;
+    svg {
+      color: #fff;
+    }
+  }
+  .card-body {
+    position: relative;
+  }
+  .warper-loading {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9999;
+    background: #ffffffab;
+    top: 0;
+    left: 0;
+    display: table;
+    .loading {
+      text-align: center;
+      width: 100%;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  .filter-modal {
+    label {
+      font-size: 12px;
+    }
+    .modal-dialog {
+      max-width: 800px !important;
+    }
+  }
+  
+  .require {
+    color: red;
+  }
+  .image-table {
+    overflow: hidden;
+    padding: 10px;
+    width: 75px;
+    img {
+      width: 100%;
+    }
+  }
+  .filter-input {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    .filter-input-item {
+      &-9 {
+        flex-grow: 9;
+      }
+      &-1 {
+        flex-grow: 1;
+      }
+    }
+  }
+  .pdl10 {
+    padding-left: 10px;
+  }
+  .list-action {
+    & > a,
+    & > button {
+      margin-left: 10px;
+      float: right;
+      height: 40px;
+    }
+    &::after {
+      content: "";
+      clear: both;
+    }
+  }
+  .module-list {
+    header {
+      width: 100%;
+      > div {
+        width: 100%;
+        border-bottom: 1px solid #d8dbe0;
+      }
+    }
+  }
+  .filter-collapse {
+    width: 100%;
+  }
+  .check-all {
+    .custom-control-label::before {
+      // top: 7px;
+      // left: -20px !important;
+    }
+  }
+  .modal-body {
+    .module-list {
+      header {
+        display: none;
+      }
+    }
+    .card {
+      max-height: 650px;
+      overflow: auto;
+    }
+  }
+  .title-role-permission {
+    cursor: pointer;
+    &::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+  }
+  .container-preview-pdf .ant-modal {
+    top: 20px;
+  }
+  
+  .container-preview-pdf .ant-modal-body {
+    padding: 0px;
+  }
+  .container-preview-pdf .modal-dialog {
+    max-width: 60%;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+    #iframeContainer {
+      height: 100%;
+    }
+  }
+  .container-spin-pdf {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .container-spin-pdf .icon-spin-pdf {
+    font-size: 40px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .image-preview {
+    max-width: 80px;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 6px;
+    img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  .image-preview-list {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    padding: 5px;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+    }
+  }
+  .image-preview-detail{
+    width: 100%;
+    div{
+      margin-bottom: 10px;
+      margin-right: 10px;
+      width: 100px;
+      overflow: hidden;
+      float: left;
+      img {
+        width: 100%;
+      }
+    }
+  
+  }
+  .label-form-group {
+    font-weight: 700;
+    padding: 5px 0;
+  }
+  .form-group{
+      margin-bottom: 10px;
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  .pd {
+    &0 {
+      padding: 0;
+    }
+    &l0 {
+      padding-left: 0;
+    }
+    &r0 {
+      padding-right: 0;
+    }
+    &t0 {
+      padding-top: 0;
+    }
+    &b0 {
+      padding-bottom: 0;
+    }
+  }
+  .mg {
+    &0 {
+      margin: 0;
+    }
+    &l0 {
+      margin-left: 0;
+    }
+    &r0 {
+      margin-right: 0;
+    }
+    &t0 {
+      margin-top: 0;
+    }
+    &b0 {
+      margin-bottom: 0;
+    }
+    &l10 {
+      margin-left: 10px;
+    }
+    &r10 {
+      margin-right: 10px;
+    }
+    &t10 {
+      margin-top: 10px;
+    }
+    &b10 {
+      margin-bottom: 10px;
+    }
+  }
+  .relative {
+    position: relative;
+  }
+  .card-close {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 100%;
+    border: 1px solid #321fdb;
+    z-index: 100;
+    padding: 0;
+    text-align: center;
+    background: #321fdb;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    .icon-close {
+      color: #fff;
+      svg {
+        margin-bottom: 2px;
+      }
+    }
+  }
+  .modal-content {
+    position: relative;
+  }
+  .modal-body {
+    position: unset;
+    overflow: auto;
+  }
+  .color {
+    &-primary {
+      color: #321fdb;
+    }
+    &-danger {
+      color: #e55353;
+    }
+  }
+  .tab-pane {
+    padding-top: 10px;
+  }
+  .form-error {
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #e55353;
+  }
+  .search-text {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+  .card-image {
+    display: block;
+    width: 100%;
+    clear: both;
+    .uploader {
+      width: 250px;
+      float: left;
+    }
+    .review {
+      position: relative;
+      display: flex;
+      .img-preview {
+        overflow: hidden;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-between;
+        justify-content: space-between;
+        .img-item {
+          max-width: 200px;
+          margin: auto;
+          position: relative;
+          .times{
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 20px;
+            width: 20px;
+            cursor: pointer;
+            background-color: #fff;
+            border-radius: 100%;
+            text-align: center;
+          }
+          img {
+            width: 100%;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .clear {
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+  

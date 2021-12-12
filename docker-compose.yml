@@ -1,0 +1,46 @@
+
+version: "3.7"
+services:
+  app:
+    tty: true
+    image: laravel-react
+    working_dir: /var/www
+    environment:
+      - DEBUG=true
+    volumes:
+      - ./backend:/var/www/backend
+      - ./fontend:/var/www/fontend
+    networks:
+      - mynetwork
+    links:
+      - db
+    ports:
+      - 80:80
+      - 443:443
+      - 3000:3000
+    depends_on:
+      - db
+  db:
+    image: mariadb
+    container_name: db
+    volumes:
+      - dbdata:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE : backend
+      SERVICE_NAME: mysql
+    ports:
+      - 3308:3306
+    networks:
+      - mynetwork
+volumes:
+  db:
+    external: true
+  app:
+    external: true
+  dbdata:
+    driver: local
+networks:
+  mynetwork:
+    driver: bridge
