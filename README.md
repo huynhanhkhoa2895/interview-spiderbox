@@ -14,6 +14,7 @@
 ## Docker Usage
 
 ```sh
+docker build -t laravel-react .
 docker-compose up
 ```
 
