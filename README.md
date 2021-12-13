@@ -31,6 +31,7 @@ docker-compose up
 PHP version: 8.0
 Laravel : 8.*
 Mysql: 8.*
+Port: 80
 ```
 
 ## Backend Install
@@ -59,6 +60,7 @@ Third: Check URL have existed in database yet. If it is exist I will turn back t
 ```sh
 Node version: 14.*
 React : 17.0.*
+Port: 3000
 ```
 
 ## Frontend Install
